@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_12_26_235343) do
   create_table "skaters", force: :cascade do |t|
     t.string "name"
     t.string "zip"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
