@@ -2,8 +2,12 @@ class ApplicationController < ActionController::API
 
     private
 
-    def create_token(skater_id)
-        JWT.encode({ skater_id: skater_id }, hmac_secret, "HS256")      
+    # def create_token(skater_id)
+    #     JWT.encode({ skater_id: skater_id }, hmac_secret, "HS256")      
+    # end
+
+    def encode_token(payload)
+       JWT.encode(payload, hmac_secret, "HS256")      
     end
 
     def hmac_secret

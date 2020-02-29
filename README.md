@@ -1,25 +1,27 @@
-# README
+# Skate-Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Skate-Search is an Application developed to crowd-source data related to specific locations uploaded by users for the purpose of sharing content.
 
-Things you may want to cover:
 
-* Ruby version
+This is the backend repo for Skate-Search, the frontend can be found at the following address: https://github.com/solomonp90/skate-app-frontend-react
 
-* System dependencies
+## Languages and Framework
+**Front End**
+* React.js
+* React Router
+* React-Bootstrap
 
-* Configuration
+**Back End**
+* Ruby
+* Ruby on Rails 6.0
+* JWT Authorization
 
-* Database creation
+## Installation 
+1. Clone repo and CD into the directory
+2. run `bundle install`
+3. run `rails db:create` to create your postgres database
+4. run `rails db:migrate` to bring up migrations
+5. run `rails db:seed` to seed data
+6. run `rails s` to start the server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# skate-app-backend-api
+Make sure to checkout the repo for the frontend and follow the installation instructions as well.
